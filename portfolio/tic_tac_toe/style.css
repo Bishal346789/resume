@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #6b19c9;
+    --winning-blocks: #2d414b;
+}
+
+body {
+    color: var(--orange);
+    font-family: 'Finger Paint', cursive;
+    border: 2px solid black;
+}
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+}
+
+.container {
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #7de3f0;
+}
+
+#gameboard {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    
+}
+.box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    transition: all 0.4s ease 0s;
+    
+}
+.box:nth-child(3n) {
+    border-right: none;
+}
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+} 
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: #333;
+    border-color: var(--orange);
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+}
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+#name{
+    font-size: 10px;
+    text-align: center;
+    background-color: #7de3f0;
+    padding-top: 10px;
+    margin-top: 50px;
+}
+#playerText{
+    font-size: 45px;
+}
+
+/* body{
+    margin: 0%;
+    padding: 0%;
+    font-display: 20px;
+} */
+.container_1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: cornflowerblue;
+    font-weight: bold;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 5px solid black;
+    position:fixed;
+    border-radius: 6px;
+    box-shadow: 10px 10px 60px rgb(0, 0, 0, 0.3);
+    /* margin-top: 90px; */
+    /* margin-bottom: 650px; */
+    /* border-left: 60px; */
+    align-items: center;
+    background-color: #2d414b;
+    margin-top: 480px;
+    margin-right: 200px;
+}
+#name{
+    padding-left: 200px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+.instruction{
+    font-family: 'Play', sans-serif;
+   background-color:aliceblue;
+}
+#restartBtn{
+    color: white;
+}
+.box:hover {
+    background-color:cyan;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+    }
+
+/* ---------------------------smaller screen------------ */
+@media only screen and (max-width: 600px){
+    .container_1{
+        margin-top: 500px;
+        margin-left: 100px;
+        width: 180px;
+    }
+}

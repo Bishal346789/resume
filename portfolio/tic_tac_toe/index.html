@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    
+
+
+    <div class="container">
+     <!-- ----------------------clock-------------------- -->
+     <div class="container_1">
+        <span id="hours">00</span>
+        <span>:</span>
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span  id="seconds">00</span>
+        <span  id="session">AM</span>
+    </div>
+     <!-- --------------tic-tac-toc------------------------ -->
+        <h1 id="playerText">Tic Tac Toe</h1>
+        <!-- onclick="playSound()" -->
+
+
+        <button id="restartBtn" oneclick="audio.play();">Restart</button>
+        
+        <div class="instruction">
+            <p>PLAYER-1=X ||  PLAYER-2=0 </p>
+        </div>
+        <div id="gameboard" >
+            <div class="box" id="0" onclick="playSound()"></div>                            
+            <div class="box" id="1" onclick="playSound()"></div>
+            <div class="box" id="2" onclick="playSound()"></div>
+            <div class="box" id="3" onclick="playSound()"></div>
+            <div class="box" id="4" onclick="playSound()"></div>
+            <div class="box" id="5" onclick="playSound()"></div>
+            <div class="box" id="6" onclick="playSound()"></div>
+            <div class="box" id="7" onclick="playSound()"></div>
+            <div class="box" id="8" onclick="playSound()"></div>
+        </div>
+        
+        <div id="name">
+            <p>Bishal</p>
+        </div>
+    </div>
+     
+
+    <script src="app.js"></script>
+</body>
+</html>
